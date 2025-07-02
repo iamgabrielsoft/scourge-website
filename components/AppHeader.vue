@@ -39,14 +39,14 @@
 
           <!-- Profile dropdown -->
           <div class="ml-3 relative">
-            <div>
+            <!-- <div>
               <button @click="isProfileMenuOpen = !isProfileMenuOpen" class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 <span class="sr-only">Open user menu</span>
                 <div class="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center">
                   <span class="text-indigo-600 font-medium">U</span>
                 </div>
               </button>
-            </div>
+            </div> -->
             
             <!-- Dropdown menu -->
             <!-- <transition
@@ -88,7 +88,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="md:hidden" v-show="isMobileMenuOpen">
+    <!-- <div class="md:hidden" v-show="isMobileMenuOpen">
       <div class="pt-2 pb-3 space-y-1">
         <NuxtLink 
           v-for="item in navItems" 
@@ -128,7 +128,7 @@
           </NuxtLink>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
 </template>
 

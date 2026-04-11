@@ -11,12 +11,18 @@
       </div>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
-            Get started
+          <a
+            :href="isLoggedIn ? `${appUrl}/home` : `${appUrl}/create`"
+            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+          >
+            {{ isLoggedIn ? 'Open App' : 'Get started' }}
           </a>
         </div>
         <div class="ml-3 inline-flex rounded-md shadow">
-          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 bg-opacity-60 hover:bg-opacity-70">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 bg-opacity-60 hover:bg-opacity-70"
+          >
             Live demo
           </a>
         </div>
@@ -25,8 +31,8 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'CallToAction'
-}
+<script setup>
+const config = useRuntimeConfig()
+const appUrl = config.public.appUrl
+const { isLoggedIn } = useAuthState()
 </script>

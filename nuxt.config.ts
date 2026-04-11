@@ -9,5 +9,13 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
-  }
+  },
+  devServer: {
+    port: 6900
+  },
+  runtimeConfig: {
+    public: {
+      appUrl: 'http://localhost:6900',
+    },
+  },
 })

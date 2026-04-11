@@ -18,4 +18,23 @@ export default defineNuxtConfig({
       appUrl: 'http://localhost:6900',
     },
   },
+  app: {
+    head: {
+      link: [
+        // SVG favicon — all modern browsers (Chrome, Firefox, Edge, Safari 12+)
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        // ICO fallback for older browsers
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        // iOS home screen icon
+        { rel: 'apple-touch-icon', href: '/favicon.svg' },
+        // PWA manifest
+        { rel: 'manifest', href: '/site.webmanifest' },
+      ],
+      meta: [
+        // Android Chrome address bar + Edge tab colour
+        { name: 'theme-color', content: '#9E5CF7' },
+        { name: 'msapplication-TileColor', content: '#08090C' },
+      ],
+    },
+  },
 })

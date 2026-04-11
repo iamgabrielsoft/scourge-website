@@ -1,0 +1,17 @@
+{
+  "name": "Scourge",
+  "short_name": "Scourge",
+  "description": "The all-in-one product management platform for modern teams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090C",
+  "theme_color": "#9E5CF7",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

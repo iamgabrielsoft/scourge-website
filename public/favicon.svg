@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Dark background -->
+  <rect width="64" height="64" rx="14" fill="#08090C"/>
+
+  <!-- Outer hexagon — purple -->
+  <path d="M32 6 L56 19 L56 45 L32 58 L8 45 L8 19 Z"
+    fill="rgba(158,92,247,0.15)"
+    stroke="#9E5CF7"
+    stroke-width="2.5"
+    stroke-linejoin="round"/>
+
+  <!-- Inner hexagon — marine -->
+  <path d="M32 18 L46 25.5 L46 40.5 L32 48 L18 40.5 L18 25.5 Z"
+    fill="rgba(43,194,255,0.12)"
+    stroke="#2BC2FF"
+    stroke-width="1.8"
+    stroke-linejoin="round"
+    opacity="0.9"/>
+
+  <!-- Centre dot — purple solid -->
+  <circle cx="32" cy="33" r="5" fill="#9E5CF7" opacity="0.35"/>
+  <circle cx="32" cy="33" r="2.5" fill="#9E5CF7"/>
+</svg>

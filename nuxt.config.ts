@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      appUrl: 'http://localhost:6900',
+      appUrl: 'https://scourge.team',
     },
   },
   app: {

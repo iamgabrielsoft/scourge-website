@@ -15,9 +15,17 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      appUrl: 'https://scourge.team',
+      appUrl: 'https://app.marketingvaults.cfd',
     },
   },
+  // Static site generation
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
+
   app: {
     head: {
       link: [

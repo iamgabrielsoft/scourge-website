@@ -127,7 +127,7 @@
               </div>
               <div class="flex-1 flex justify-center">
                 <div class="px-4 py-1 rounded bg-veryDarkBlue border border-lightBlack text-[11px] text-slateDark font-mono">
-                  app.scourge.com/team/roadmap
+                  app.marketingvaults.cfd/home
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@
  * by reading the `accessToken` cookie that the app backend sets on sign-in.
  *
  * The cookie is not httpOnly so JavaScript can read it, and its domain is set
- * to the apex domain (e.g. `.scourge.com`) so the marketing site can see it
+ * to the apex domain (e.g. `.marketingvaults.cfd`) so the marketing site can see it
  * alongside the app subdomain.
  *
  * We intentionally do NOT validate the token here — if it's present we treat

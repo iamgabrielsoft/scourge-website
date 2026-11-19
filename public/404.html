@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Page Not Found · Scourge</title>
+  <meta name="theme-color" content="#9E5CF7" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <style>
+    :root {
+      --bg: #08090C;
+      --text: #E6E6E6;
+      --muted: #9BA6B2;
+      --dim: #394351;
+      --line: #2F3336;
+      --purple: #9E5CF7;
+      --cyan: #2BC2FF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.3;
+      background-image: radial-gradient(circle, #394351 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+    body::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 55% 40% at 50% 55%, rgba(158,92,247,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .wrap {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 28rem;
+    }
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--dim);
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: clamp(4.5rem, 16vw, 6rem);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 1rem;
+      font-variant-numeric: tabular-nums;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 0.25rem;
+      transition: transform 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary {
+      color: var(--text);
+      background: linear-gradient(135deg, var(--purple), var(--cyan));
+      box-shadow: 0 0 20px rgba(158,92,247,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-ghost {
+      color: var(--muted);
+      border: 1px solid var(--line);
+      font-weight: 500;
+    }
+    .btn-ghost:hover {
+      color: var(--text);
+      border-color: var(--dim);
+    }
+    .links {
+      margin-top: 3.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem 1.5rem;
+    }
+    .links span {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--dim);
+    }
+    .links a {
+      font-size: 0.75rem;
+      color: var(--dim);
+      text-decoration: none;
+    }
+    .links a:hover { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="eyebrow">Error 404</p>
+    <h1>404</h1>
+    <h2>This page doesn't exist</h2>
+    <p>The page you're looking for was moved, removed, or never existed. Let's get you back on track.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Back to home</a>
+      <a class="btn btn-ghost" href="/contact">Contact support</a>
+    </div>
+    <div class="links">
+      <span>Quick links</span>
+      <a href="/pricing">Pricing</a>
+      <a href="/agents">Agents</a>
+      <a href="/documentation">Docs</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+</body>
+</html>

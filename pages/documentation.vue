@@ -50,7 +50,7 @@
 
         <!-- Bottom links -->
         <div class="border-t border-lightBlack p-3 space-y-0.5">
-          <a href="/documentation/api"
+          <a href="/documentation#api"
             class="flex items-center gap-2 px-3 py-2 rounded-md text-xs text-slate hover:text-almostWhite hover:bg-almostBlack transition-colors duration-150">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
               <rect x="1" y="3" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1.1"/>

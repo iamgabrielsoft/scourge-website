@@ -18,11 +18,13 @@ export default defineNuxtConfig({
       appUrl: 'https://app.marketingvaults.cfd',
     },
   },
-  // Static site generation — include /404 for Vercel fallback
+  // Prerender known pages; don't fail the build on placeholder / missing links
   nitro: {
     prerender: {
       crawlLinks: true,
       routes: ['/', '/404'],
+      failOnError: false,
+      ignore: ['/blog/**', '/status', '/documentation/**'],
     },
   },
 

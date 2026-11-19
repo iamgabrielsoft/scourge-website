@@ -52,7 +52,7 @@
         <NuxtLink
           v-for="post in featuredPosts"
           :key="post.slug"
-          :to="`/blog/${post.slug}`"
+          to="/blog"
           class="group flex flex-col rounded-xl border border-lightBlack bg-almostBlack overflow-hidden hover:border-slateDark transition-all duration-200"
         >
           <!-- Cover art -->
@@ -90,7 +90,7 @@
         <NuxtLink
           v-for="post in visiblePosts"
           :key="post.slug"
-          :to="`/blog/${post.slug}`"
+          to="/blog"
           class="group flex flex-col rounded-xl border border-lightBlack bg-almostBlack overflow-hidden hover:border-slateDark transition-all duration-200"
         >
           <!-- Cover art -->

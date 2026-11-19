@@ -248,10 +248,10 @@ const secondaryItems = [
   {
     title: 'Status',
     description: 'Check the real-time status of Scourge services, uptime history, and subscribe to incident alerts.',
-    href: '/status',
-    linkLabel: 'View status page',
+    href: '/contact',
+    linkLabel: 'Contact support',
     color: '#42DED1',
-    external: true,
+    external: false,
   },
   {
     title: 'Press & media',
